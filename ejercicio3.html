@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+  
+</head>
+<body>
+
+    <br><br>
+
+    <div class="container" style="width: 50em; background-color: rgb(73, 73, 73); border-radius: 20px; color: aliceblue; margin-right: 2em; margin-left: 8em; float: left;" >
+        <br>
+        <div class="container" style="text-align: center;">
+            <h2>Datos del Estudiante</h2>
+        </div>
+        <div class="mb-3">
+            <b><label for="mat" class="form-label">Nota de Matemáticas</label></b>
+            <input type="number" class="form-control" id="mat" placeholder="Ingresa nota de Matemáticas del estudiante">
+        </div>
+        <div class="mb-3">
+            <b><label for="fis" class="form-label">Nota de Física</label></b>
+            <input type="number" class="form-control" id="fis" placeholder="Ingresa nota de Física del estudiante">
+        </div>
+        <div class="mb-3">
+            <b><label for="prog" class="form-label">Nota de Programación</label></b>
+            <input type="number" class="form-control" id="prog" placeholder="Ingresa nota de Programación del estudiante">
+        </div>
+        <div class="mb-3">
+            <b><label for="nombre" class="form-label">Nombre</label></b>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa nombre del estudiante">
+            <b><label for="cedula" class="form-label">Cédula</label></b>
+            <input type="number" class="form-control" id="cedula" placeholder="Ingresa cédula del estudiante" minlength="7" maxlength="8" step="1">
+        </div>
+        <br>
+        <div class="container" style="text-align: center;">
+            <button type="button" class="btn btn-success btn-lg" id="btn" onclick="agregarEstudiante2()">Agregar estudiante</button>
+        </div>
+        <br><br>
+    </div>
+    
+
+    <br><br>
+
+    <div style="float: left;">
+        <div id="promedios" class="container" style="width: 25em; background-color: rgb(73, 73, 73); border-radius: 10px; color: aliceblue;" ></div>
+
+    <br>
+
+    <div id="estadisticas" class="container" style="width: 25em; background-color: rgb(73, 73, 73); border-radius: 10px; color: aliceblue;" ></div>
+    </div>
+
+    
+    
+    <br><br>
+    <div></div>
+
+    
+    <script src="js/ejtres.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
